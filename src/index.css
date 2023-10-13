@@ -22,3 +22,40 @@
 body {
   font-family: var(--ff);
 }
+
+.object-fit {
+  object-fit: cover !important;
+}
+
+.hero-container {
+  background-color: #4db5ff;
+}
+
+.hero-image {
+  height: 40vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: 80% 10%;
+}
+
+.vector {
+  display: grid;
+  grid-template-columns: 5% 95%;
+}
+
+@media screen and (max-width: 900px) {
+  .location {
+    display: none !important;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
