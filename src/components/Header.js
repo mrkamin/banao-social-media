@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import IMG from "./assets/whole.png";
 
 const Header = ({openSignIn, openSignUp}) => {

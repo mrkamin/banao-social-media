@@ -69,8 +69,10 @@ const Feed = () => {
         </div>
         <div className="vector">
           <img src={vector} alt="vetor" />
-          <div className="text-start">Your location will help us serve better and extend a personalised
-          experience.</div>
+          <div className="text-start">
+            Your location will help us serve better and extend a personalised
+            experience.
+          </div>
         </div>
       </div>
     </div>
