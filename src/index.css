@@ -65,6 +65,10 @@ body {
 background-color: #EFFFF4;
 color: #008A45;
 }
+
+.sign-up input {
+  border-radius: none !important;
+}
 @media screen and (max-width: 900px) {
   .location {
     display: none !important;

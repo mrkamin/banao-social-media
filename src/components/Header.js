@@ -29,7 +29,7 @@ const Header = ({openSignIn, openSignUp}) => {
               <input
                 class="form-control me-2 rounded-pill"
                 type="search"
-                placeholder="Search"
+                placeholder="Search for your favorite groups in ATG"
                 aria-label="Search"
               />
             </form>
