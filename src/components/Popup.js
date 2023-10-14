@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { GrFormClose } from "react-icons/gr";
 import Header from "./Header";
 import IMG from "./assets/Group 3.png";
@@ -60,12 +61,13 @@ const Popup = () => {
                           placeholder="password"
                         />
                       </div>
-                      <button
+                      <Link
+                        to="/signin"
                         type="submit"
                         class="btn btn-primary rounded-pill w-100"
                       >
                         Sign In
-                      </button>
+                      </Link>
                     </div>
                     <div className="d-flex flex-column gap-2">
                       <button type="submit" class="btn border w-100">
@@ -115,20 +117,20 @@ const Popup = () => {
                       <div class="mb-3 field form-group">
                         <h4 className="text-start">Create Accout</h4>
                         <div className="d-flex sign-up">
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="exampleInputEmail1"
-                          aria-describedby="emailHelp"
-                          placeholder="First Name"
-                        />
-                         <input
-                          type="text"
-                          class="form-control"
-                          id="exampleInputEmail1"
-                          aria-describedby="emailHelp"
-                          placeholder="Last Name"
-                        />
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            placeholder="First Name"
+                          />
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            placeholder="Last Name"
+                          />
                         </div>
                         <input
                           type="email"
@@ -143,7 +145,7 @@ const Popup = () => {
                           id="exampleInputPassword1"
                           placeholder="password"
                         />
-                         <input
+                        <input
                           type="password"
                           class="form-control"
                           id="exampleInputPassword1"
@@ -171,12 +173,13 @@ const Popup = () => {
                   <div className="p-2">
                     <p>
                       Already have an account?{" "}
-                      <span className="text-primary fw-bold">
-                        Sign In
-                      </span>
+                      <span className="text-primary fw-bold">Sign In</span>
                     </p>
                     <img src={IMG} alt="photosinup" />
-                    <p>By signing up, you agree to our Terms & conditions, Privacy policy</p>
+                    <p>
+                      By signing up, you agree to our Terms & conditions,
+                      Privacy policy
+                    </p>
                   </div>
                 </div>
               </div>

@@ -1,15 +1,21 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Hero from "./components/Hero";
 import Popup from "./components/Popup";
-import HeroNav from "./components/HeroNav";
+import SignIn from "./components/SignIn";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="App position-relative">
-      <Popup />
-      <Hero />
-      <HeroNav />
-    </div>
+    <Router>
+      <div className="App position-relative">
+        <Popup />
+        <Routes>
+          <Route path="/" exact Component={Home} />
+          <Route path="/signin" Component={SignIn} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
