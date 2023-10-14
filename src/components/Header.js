@@ -1,69 +1,72 @@
-import React from "react";
+import React, { useState } from "react";
 import IMG from "./assets/whole.png";
 
-const Header = ({openSignIn, openSignUp}) => {
-  
+const Header = ({ openSignIn, openSignUp }) => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  // Function to toggle the navigation menu
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
+  // Function to close the navigation menu
+  const closeNav = () => {
+    setIsNavOpen(false);
+  };
+
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary header-navbar">
-      <div class="container-fluid">
+    <nav className={`navbar navbar-expand-lg bg-body-tertiary header-navbar${isNavOpen ? ' open' : ''}`}>
+      <div className="container-fluid">
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          onClick={toggleNav}
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse pe-5 ps-5  headernav"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between w-100">
-            <a class="navbar-brand" href="#">
+        <div className={`collapse navbar-collapse pe-5 ps-5 headernav${isNavOpen ? ' show' : ''}`}>
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between w-100">
+            <a className="navbar-brand" href="#" onClick={closeNav}>
               <img src={IMG} alt="Logo" />
             </a>
-            <form class="d-flex" role="search">
+            <form className="d-flex" role="search">
               <input
-                class="form-control me-2 rounded-pill"
+                className="form-control me-2 rounded-pill"
                 type="search"
                 placeholder="Search for your favorite groups in ATG"
                 aria-label="Search"
               />
             </form>
-            <li class="nav-item dropdown">
+            <li className="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
+                aria-expanded={isNavOpen}
               >
                 Create account.{" "}
                 <span className="text-primary fw-bold">It's free!</span>
               </a>
-              <ul class="dropdown-menu">
+              <ul className="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#" onClick={openSignIn}>
+                  <a className="dropdown-item" href="#" onClick={() => { closeNav(); openSignIn(); }}>
                     Sign In
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#" onClick={openSignUp}>
+                  <a className="dropdown-item" href="#" onClick={() => { closeNav(); openSignUp(); }}>
                     Sign Up
                   </a>
                 </li>
                 <li>
-                  <hr class="dropdown-divider" />
+                  <hr className="dropdown-divider" />
                 </li>
               </ul>
             </li>
           </ul>
         </div>
       </div>
-  
     </nav>
   );
 };
