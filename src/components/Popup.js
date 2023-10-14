@@ -114,21 +114,6 @@ const Popup = () => {
                     <div>
                       <div class="mb-3 field form-group">
                         <h4 className="text-start">Create Accout</h4>
-                        {/* <table class="table table-bordered">
-                          <thead></thead>
-                          <tbody>
-                            <tr>
-                              <th>First Name</th>
-                              <td>Last Name</td>
-                            </tr>
-                            <tr>
-                              <th>password</th>
-                            </tr>
-                            <tr>
-                              <th>Confirm Password</th>
-                            </tr>
-                          </tbody>
-                        </table> */}
                         <div className="d-flex sign-up">
                         <input
                           type="text"
@@ -174,11 +159,11 @@ const Popup = () => {
                     </div>
                     <div className="d-flex flex-column gap-2">
                       <button type="submit" class="btn border w-100">
-                        <img src={IMG1} alt="facebook logo" /> Sign In with
+                        <img src={IMG1} alt="facebook logo" /> Sign Up with
                         Facebook
                       </button>
                       <button type="submit" class="btn border w-100">
-                        <img src={IMG2} alt="google logo" /> Sign In whit Google
+                        <img src={IMG2} alt="google logo" /> Sign Up whit Google
                       </button>
                     </div>
                   </form>
