@@ -11,17 +11,17 @@ const HeroNav = () => {
             All Post(32)
           </a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler dropdown-toggle"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#navbarSupportedConten"
+            aria-controls="navbarSupportedConten"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="">All Filters</span>
+            <span class="">Filters: All</span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent"> 
+          <div className="collapse navbar-collapse" id="navbarSupportedConten"> 
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link " href="#">
@@ -68,12 +68,12 @@ const HeroNav = () => {
                 </li>
               </ul>
             </div>
-            <button class="btn btn-primary" type="button">
+          </div>
+          </div>
+          <button class="btn btn-primary joingroup" type="button">
               <MdGroupAdd />
               Join Group
             </button>
-          </div>
-          </div>
         </div>
       </nav>
       <Feed />

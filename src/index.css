@@ -77,4 +77,10 @@ color: #008A45;
     display: grid;
     grid-template-columns: 100%;
   }
+  .joingroup{
+    position: fixed;
+    top:80px;
+    right: 10px;
+    background: none !important;
+  }
 }
