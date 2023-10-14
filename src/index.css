@@ -42,7 +42,7 @@ body {
 
 .title {
   display: grid;
-  grid-template-columns: 80% 10%;
+  grid-template-columns: 80% 20%;
 }
 
 .vector {
@@ -68,6 +68,11 @@ color: #008A45;
 
 .sign-up input {
   border-radius: none !important;
+}
+
+.dropdown-btn {
+  border: none;
+  background: white;
 }
 @media screen and (max-width: 992px) {
   .location {

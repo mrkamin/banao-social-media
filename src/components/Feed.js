@@ -18,9 +18,30 @@ const Feed = () => {
                 <h5 class="card-title ">{data.category}</h5>
                 <div className="title justify-content-between ">
                   <h4 class="card-text ">{data.title}</h4>
-                  <button className="btn fs-2 p-0 text-align-center">
-                    ...
-                  </button>
+                  <div className="dropdown">
+                    
+                    <button
+                      className="dropdown-btn fs-2 p-0 text-end" // Toggle class
+                      type="button"
+                      id={`dropdownMenu${data.id}`} // Unique ID for each dropdown
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      ...
+                    </button>
+                    <div
+                      className="dropdown-menu"
+                      aria-labelledby={`dropdownMenu${data.id}`} // Match the ID
+                    >
+                      <a className="dropdown-item" href="#">
+                        Edit
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Report
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <p>{data.details}</p>
                 <div className="d-flex flex-column gap-3">
