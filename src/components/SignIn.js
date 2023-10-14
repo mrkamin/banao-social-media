@@ -1,6 +1,7 @@
 import React from "react";
 import { MdGroupAdd } from "react-icons/md";
 import Feed from "./Feed";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   return (
@@ -73,10 +74,10 @@ const SignIn = () => {
               </div>
             </div>
           </div>
-          <button class="btn btn-primary joingroup" type="button">
+          <Link to="/" class="btn btn-primary joingroup" type="button">
             <MdGroupAdd />
             Leave Group
-          </button>
+          </Link>
         </div>
       </nav>
       <Feed />

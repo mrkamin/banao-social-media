@@ -63,8 +63,8 @@ const Popup = () => {
                       </div>
                       <Link
                         to="/signin"
-                        type="submit"
                         class="btn btn-primary rounded-pill w-100"
+                        onClick={closeSignIn}
                       >
                         Sign In
                       </Link>
