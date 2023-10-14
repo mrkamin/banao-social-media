@@ -4,7 +4,7 @@ import IMG from "./assets/whole.png";
 const Header = ({openSignIn, openSignUp}) => {
   
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary header-navbar">
       <div class="container-fluid">
         <button
           class="navbar-toggler"
@@ -18,7 +18,7 @@ const Header = ({openSignIn, openSignUp}) => {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse pe-5 ps-5"
+          class="collapse navbar-collapse pe-5 ps-5  headernav"
           id="navbarSupportedContent"
         >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between w-100">

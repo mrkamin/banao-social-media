@@ -21,8 +21,8 @@ const HeroNav = () => {
           >
             <span class="">Filters: All</span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedConten"> 
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div className="collapse navbar-collapse rounded-2 heronav" id="navbarSupportedConten"> 
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li class="nav-item">
               <a class="nav-link " href="#">
                 Event
@@ -39,7 +39,7 @@ const HeroNav = () => {
               </a>
             </li>
           </ul>
-          <div class="d-flex gap-2">
+          <div class="gap-2">
             <div class="dropdown">
               <button
                 class="btn btn-light dropdown-toggle"
@@ -50,7 +50,7 @@ const HeroNav = () => {
               >
                 Write a Post
               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton">
                 <li>
                   <a class="dropdown-item" href="#">
                     Image

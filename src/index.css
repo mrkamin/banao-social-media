@@ -69,7 +69,7 @@ color: #008A45;
 .sign-up input {
   border-radius: none !important;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .location {
     display: none !important;
   }
@@ -82,5 +82,29 @@ color: #008A45;
     top:80px;
     right: 10px;
     background: none !important;
+    z-index: 88;
   }
+.header-navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+  .headernav {
+    position: absolute;
+    width: 100%;
+    top: 56px;
+    left: 0;
+    z-index: 100;
+    background: #ffffffec;
+    height: 100vh;
+  }
+ .heronav {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  top: 50px;
+  left: 0;
+  background-color: #61dafb;
+  padding: 10px;
+ }
 }
