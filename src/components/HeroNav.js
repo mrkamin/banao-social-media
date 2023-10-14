@@ -1,6 +1,7 @@
 import React from "react";
 import { MdGroupAdd } from "react-icons/md";
 import Feed from "./Feed";
+import SidbarForHome from "./SidbarForHome";
 
 const HeroNav = () => {
   return (
@@ -21,62 +22,68 @@ const HeroNav = () => {
           >
             <span class="">Filters: All</span>
           </button>
-          <div className="collapse navbar-collapse rounded-2 heronav" id="navbarSupportedConten"> 
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-            <li class="nav-item">
-              <a class="nav-link " href="#">
-                Event
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">
-                Education
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">
-                Job
-              </a>
-            </li>
-          </ul>
-          <div class="gap-2">
-            <div class="dropdown">
-              <button
-                class="btn btn-light dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Write a Post
-              </button>
-              <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton">
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Image
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Video
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Post
-                  </a>
-                </li>
-              </ul>
+          <div
+            className="collapse navbar-collapse rounded-2 heronav"
+            id="navbarSupportedConten"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link " href="#">
+                  Event
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">
+                  Education
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">
+                  Job
+                </a>
+              </li>
+            </ul>
+            <div class="gap-2">
+              <div class="dropdown">
+                <button
+                  class="btn btn-light dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Write a Post
+                </button>
+                <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Image
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Video
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Post
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          </div>
           <button class="btn btn-primary joingroup" type="button">
-              <MdGroupAdd />
-              Join Group
-            </button>
+            <MdGroupAdd />
+            Join Group
+          </button>
         </div>
       </nav>
-      <Feed />
+      <div className="container grid gap-5">
+        <Feed />
+        <SidbarForHome />
+      </div>
     </div>
   );
 };

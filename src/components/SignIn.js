@@ -1,8 +1,8 @@
 import React from "react";
-import { MdGroupAdd } from "react-icons/md";
 import Feed from "./Feed";
 import { Link } from "react-router-dom";
 import IMG from "./assets/outline-exit_to_app-24px.png";
+import Sidebar from "./Sidebar";
 
 const SignIn = () => {
   return (
@@ -81,7 +81,10 @@ const SignIn = () => {
           </Link>
         </div>
       </nav>
+      <div className="container grid gap-5">
       <Feed />
+      <Sidebar />
+      </div>
     </div>
   );
 };
