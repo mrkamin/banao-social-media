@@ -52,7 +52,7 @@ body {
 
 .popup {
   z-index: 99 !important;
-  background:#2c2c6cc2;
+  background:#00000093;
   height: 100vh;
   width: 100%;
 }
