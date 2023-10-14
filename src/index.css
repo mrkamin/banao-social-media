@@ -135,4 +135,9 @@ body {
   .popupphoto {
     display: none;
   }
+
+  .hero-para {
+    top: 250px;
+    left: 20px;
+  }
 }
