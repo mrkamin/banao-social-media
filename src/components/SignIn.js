@@ -2,6 +2,7 @@ import React from "react";
 import { MdGroupAdd } from "react-icons/md";
 import Feed from "./Feed";
 import { Link } from "react-router-dom";
+import IMG from "./assets/outline-exit_to_app-24px.png";
 
 const SignIn = () => {
   return (
@@ -74,8 +75,8 @@ const SignIn = () => {
               </div>
             </div>
           </div>
-          <Link to="/" class="btn btn-primary joingroup" type="button">
-            <MdGroupAdd />
+          <Link to="/" class="btn border joingroup" type="button">
+            <img src={IMG} alt="leavgroup sign" />
             Leave Group
           </Link>
         </div>
