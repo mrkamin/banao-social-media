@@ -88,7 +88,7 @@ const Popup = () => {
                         Create new free!
                       </span>
                     </p>
-                    <img src={IMG} alt="photosignin" />
+                    <img src={IMG} className="popupphoto" alt="photosignin" />
                   </div>
                 </div>
               </div>
@@ -175,7 +175,7 @@ const Popup = () => {
                       Already have an account?{" "}
                       <span className="text-primary fw-bold">Sign In</span>
                     </p>
-                    <img src={IMG} alt="photosinup" />
+                    <img src={IMG} className="popupphoto" alt="photosinup" />
                     <p>
                       By signing up, you agree to our Terms & conditions,
                       Privacy policy

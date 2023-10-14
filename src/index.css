@@ -114,4 +114,11 @@ color: #008A45;
   padding: 10px;
   height: 60vh;
  }
+ .popup-grid{
+  display: grid;
+  grid-template-columns: 100%;
+}
+ .popupphoto {
+  display: none;
+ }
 }

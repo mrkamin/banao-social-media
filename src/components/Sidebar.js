@@ -3,6 +3,7 @@ import { MdOutlineLocationOn } from "react-icons/md";
 import { HiPencil } from "react-icons/hi";
 import vector from "./assets/Vector.png";
 import {BiLike} from 'react-icons/bi'
+import IMG from './assets/Group 65.png';
 
 const Sidebar = () => {
     return (
@@ -21,8 +22,8 @@ const Sidebar = () => {
             experience.
           </div>
         </div>
-        <div className="mt-5"><BiLike /> REcommended Groups</div>
-        <div></div>
+        <div className="mt-5"><img src={IMG} alt="phot group" /></div>
+        <div className="text-primary">See More...</div>
       </div>
     )
 }
