@@ -78,8 +78,8 @@ color: #008A45;
     grid-template-columns: 100%;
   }
   .joingroup{
-    position: fixed;
-    top:80px;
+    position: absolute;
+    top:-300px;
     right: 10px;
     background: none !important;
     z-index: 88;
@@ -104,7 +104,7 @@ color: #008A45;
   width: 100%;
   top: 50px;
   left: 0;
-  background-color: #61dafb;
+  background-color: #fff;
   padding: 10px;
  }
 }
