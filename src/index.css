@@ -3,7 +3,6 @@
 :root {
   --header-bg-color: #21222a;
   --main-bg-color: #282d35;
-  --text-color: #fff;
   --title-color: #61dafb;
   --text-color-dark: #f7f7f7;
   --color-bg: #1f1f38;
@@ -20,6 +19,7 @@
 }
 
 body {
+  position: relative;
   font-family: var(--ff);
 }
 
@@ -50,6 +50,21 @@ body {
   grid-template-columns: 5% 95%;
 }
 
+.popup {
+  z-index: 99 !important;
+  background:#2c2c6c70;
+  height: 100vh;
+  width: 100%;
+}
+.popup-grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.popup-paragraph {
+background-color: #EFFFF4;
+color: #008A45;
+}
 @media screen and (max-width: 900px) {
   .location {
     display: none !important;
