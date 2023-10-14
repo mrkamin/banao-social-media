@@ -1,14 +1,12 @@
-import React from "react";
-import Hero from "./Hero";
-import HeroNav from "./HeroNav";
+import React from 'react';
+import Hero from './Hero';
+import HeroNav from './HeroNav';
 
-const Home = () => {
-    return (
-        <>
-        <Hero />
-        <HeroNav />
-        </>
-    )
-}
+const Home = () => (
+  <>
+    <Hero />
+    <HeroNav />
+  </>
+);
 
 export default Home;

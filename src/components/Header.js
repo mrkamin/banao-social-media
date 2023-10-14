@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import IMG from "./assets/whole.png";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import IMG from './assets/whole.png';
 
 const Header = ({ openSignIn, openSignUp }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -22,13 +23,13 @@ const Header = ({ openSignIn, openSignUp }) => {
           type="button"
           onClick={toggleNav}
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon" />
         </button>
         <div className={`collapse navbar-collapse pe-5 ps-5 headernav${isNavOpen ? ' show' : ''}`}>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between w-100">
-            <a className="navbar-brand" href="#" onClick={closeNav}>
+            <button className="navbar-brand btn" type="button" onClick={closeNav}>
               <img src={IMG} alt="Logo" />
-            </a>
+            </button>
             <form className="d-flex" role="search">
               <input
                 className="form-control me-2 rounded-pill"
@@ -40,24 +41,25 @@ const Header = ({ openSignIn, openSignUp }) => {
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
-                href="#"
+                href="#create account"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded={isNavOpen}
               >
-                Create account.{" "}
-                <span className="text-primary fw-bold">It's free!</span>
+                Create account.
+                {' '}
+                <span className="text-primary fw-bold">It&apos;s free!</span>
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#" onClick={() => { closeNav(); openSignIn(); }}>
+                  <button className="dropdown-item" type="button" onClick={() => { closeNav(); openSignIn(); }}>
                     Sign In
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#" onClick={() => { closeNav(); openSignUp(); }}>
+                  <button className="dropdown-item" type="button" onClick={() => { closeNav(); openSignUp(); }}>
                     Sign Up
-                  </a>
+                  </button>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
@@ -69,6 +71,11 @@ const Header = ({ openSignIn, openSignUp }) => {
       </div>
     </nav>
   );
+};
+
+Header.propTypes = {
+  openSignIn: PropTypes.func.isRequired,
+  openSignUp: PropTypes.func.isRequired,
 };
 
 export default Header;
