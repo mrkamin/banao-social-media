@@ -4,7 +4,7 @@ import Feed from "./Feed";
 
 const HeroNav = () => {
   return (
-    <>
+    <div className="container">
       <nav class="navbar navbar-expand-lg border-bottom position-relative">
         <div class="container-fluid">
           <a class="nav-link active" href="#">
@@ -77,7 +77,7 @@ const HeroNav = () => {
         </div>
       </nav>
       <Feed />
-    </>
+    </div>
   );
 };
 
