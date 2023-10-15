@@ -6,8 +6,8 @@ const Hero = () => (
   <>
     <div className="position-relative hero-container">
       <div className="position-relative">
-        <img src={IMG} alt="Hero" className="w-100 hero-image object-fit" />
-        <img src={IMG2} alt="Hero rectingle" className="position-absolute top-0 end-0 start-0 botton-0 w-100 hero-image" />
+        <img src={IMG} alt="Hero" className="w-100 hero-image" />
+        <img src={IMG2} alt="Hero rectingle" className="position-absolute top-0 start-0 w-100 hero-image" />
       </div>
       <div className="position-absolute hero-para">
         <h1 className="text-white">Computer Engineering</h1>

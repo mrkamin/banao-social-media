@@ -29,10 +29,11 @@ body {
 
 .hero-container {
   background-color: #4db5ff;
+  height: 350px;
 }
 
 .hero-image {
-  height: 40vh;
+  height: 350px;
 }
 
 .hero-para {
@@ -93,15 +94,21 @@ body {
 
   .joingroup {
     position: absolute;
-    top: -300px;
+    top: -330px;
     right: 10px;
     background: none !important;
     z-index: 88;
     border: 1px solid white;
   }
 
+  .leavegroup {
+    position: absolute;
+    top: -48px;
+    z-index: 200;
+    right: 20px;
+  }
+
   .header-navbar {
-    position: fixed;
     width: 100%;
     z-index: 100;
   }

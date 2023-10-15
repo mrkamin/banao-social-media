@@ -74,7 +74,7 @@ const SignIn = () => (
             </div>
           </div>
         </div>
-        <Link to="/" class="btn border joingroup" type="button">
+        <Link to="/" class="btn border leavegroup" type="button">
           <img src={IMG} alt="leavgroup sign" />
           Leave Group
         </Link>

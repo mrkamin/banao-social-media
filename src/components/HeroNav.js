@@ -4,7 +4,7 @@ import Feed from './Feed';
 import SidbarForHome from './SidbarForHome';
 
 const HeroNav = () => (
-  <div className="container">
+  <div className="container heronavcontainer">
     <nav className="navbar navbar-expand-lg border-bottom position-relative">
       <div className="container-fluid">
         <a className="nav-link active" href="#allpots">
