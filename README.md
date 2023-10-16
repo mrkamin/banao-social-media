@@ -53,7 +53,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Render](https://shopping-u6pn.onrender.com)
+- [Render](https://bano.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
